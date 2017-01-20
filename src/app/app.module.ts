@@ -6,12 +6,13 @@ import {VoterComponent} from './voteComponent';
 import {VoteTakerComponent} from './voteTakerComponent';
 import {CountdownTimerComponent} from './countDownTimerComponent';
 import {CountdownLocalVarParentComponent} from './countdownocal';
+import {CountdownViewChildParentComponent} from  './countviewChildParentComponent';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,VoterComponent,VoteTakerComponent,CountdownTimerComponent,CountdownLocalVarParentComponent
+    AppComponent,VoterComponent,VoteTakerComponent,CountdownTimerComponent,CountdownLocalVarParentComponent,CountdownViewChildParentComponent
   ],
   imports: [
     BrowserModule,

@@ -7,16 +7,24 @@ export class CountdownTimerComponent implements OnInit, OnDestroy {
   intervalId = 0;
   message = '';
   seconds = 11;
-  clearTimer() { clearInterval(this.intervalId); }
+  clearTimer() {
+    console.log (this.intervalId);
+   clearInterval(this.intervalId);
+    }
+
   ngOnInit()    { this.start(); }
+
   ngOnDestroy() { this.clearTimer(); }
+
   start() { this.countDown(); }
+
   stop()  {
     this.clearTimer();
     this.message = `Holding at T-${this.seconds} seconds`;
   }
   private countDown() {
     this.clearTimer();
+    console.log (this.intervalId);
     this.intervalId = window.setInterval(() => {
       this.seconds -= 1;
       if (this.seconds === 0) {
