@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {VoterComponent} from './voteComponent';
 import {VoteTakerComponent} from './voteTakerComponent';
+import {CountdownTimerComponent} from './countDownTimerComponent';
+import {CountdownLocalVarParentComponent} from './countdownocal';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,VoterComponent,VoteTakerComponent
+    AppComponent,VoterComponent,VoteTakerComponent,CountdownTimerComponent,CountdownLocalVarParentComponent
   ],
   imports: [
     BrowserModule,
