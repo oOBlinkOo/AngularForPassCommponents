@@ -29,9 +29,14 @@ export class MissionControlComponent {
       });
   }
   announce() {
+    console.log(this.nextMission);
     let mission = this.missions[this.nextMission++];
+    
     this.missionService.announceMission(mission);
     this.history.push(`Mission "${mission}" announced`);
-    if (this.nextMission >= this.missions.length) { this.nextMission = 0; }
+    if (this.nextMission >= this.missions.length) {
+     this.nextMission = 0; 
+     console.log('me pone 00');
+   }
   }
 }
